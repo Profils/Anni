@@ -1,0 +1,175 @@
+# Конфиг 
+start-delay: 90
+phase-period: 600
+restart-delay: 15 
+stats: flatfile
+
+MySQL:
+    port: 3306
+    user: meno_uzivatela
+    pass: heslo
+    host: nieco.fakaheda.eu
+    name: meno_databazi
+roman: true
+prefix: '&0[&eNexus&0]'
+requiredToStart: 5
+build: 26
+bossRespawnDelay: 5
+enableMotd: true
+lastJoinPhase: 5
+motdLobby: '&5&lLobby'
+motdPhase: '&aФаза &e%PHASE%'
+ActionPhase: '&aФаза: &e%PHASE% &f&l| &cВремя: &5%TIME%'
+ActionStart: '&7Игра начинается ' 
+ActionRestart: '&cОбщее время: &6%TOTAL% &f| &aИгра перезагрузится через %RESTART%'
+EnableJoinTeamTitle: true
+JoinTitleTeam: '&fВыбрана команда'
+JoinSubTitleTeam: '&r%TEAM%'
+EnableClassTitle: true
+ClassTitleSelect: '&fВыбран класс' 
+ClassSubTitleSelect: '&e%CLASS%'
+EnableJoinTitle: true
+JoinTitle: '&7Добро пожаловать в Nexus!'
+JoinSubTitle: '&eПриятной игры!'
+EnableMapTitle: true
+MapTitle: '&fВыбрана карта'
+MapSubTitle: '&e%MAP%'
+EnableBossTitle: true
+SpawnBossTitle: 'Boss &a%boss% &fпоявился!'
+SpawnBossSubTitle: '&cЗамочи Boss,a!'
+EnableEndTitle: true
+EndGameTitle: '&aПоздравляем'
+EndGameSubTitle: 'Команда %TEAM% &fПобедила!'
+EnableNexusTitle: true
+NexusZnicenTitle: 'Игрок %KILLER% &из команды &r%TEAM%'
+NexusZnicenSubTitle: 'сломал &r%ZNICEN% Nexus&r!'
+EnablePhaseTitle: true
+PhaseTitle: 'Фаза &e%PHASE%'
+PhaseSubTitle: 'Началась!'
+EnableTab: true
+Header: '&7Карта: &e%MAP%'
+Voting: '&7Голосование'
+Footer: '&aФаза &e%PHASE% &7&l| &b%TIME%'
+LobbySB: '&7Голосовать /vote (номер)'
+GameSB: '&7Карта: &6&l%MAP%'
+JoinItemTeamName: '&eВыбор Команды' 
+ItemTeamID: 340
+JoinItemTeamSlot: 1
+TitleTeamMenu: '&0&l&nВыбор Команды'
+TeamSlotMenu: 9
+YellowSlot: 1
+RedSlot: 2
+GreenSlot: 3
+BlueSlot: 4
+YellowName: '&eЖелтые'
+RedName: '&cКрасные'  
+GreenName: '&aЗелёные' 
+BlueName: '&9Синие'
+YellowLore: '&e%SIPKA% &7Количество игроков: &e%YELLOW%'
+RedLore: '&c%SIPKA% &7Количество игроков: &c%RED%'
+GreenLore: '&a%SIPKA% &7Количество игроков: &a%GREEN%'
+BlueLore: '&9%SIPKA% &7Количество игроков: &9%BLUE%'
+TitleClassMenu: '&0&l&nВыбор Класса'
+JoinItemClassName: '&bВыбор Класса' 
+JoinItemClassSlot: 2
+ItemClassID: 288
+CompassItem: '&f&lМы идем к %COLOR%%TEAM% Nexus!'
+LobbyChat: '&8[&5Lobby&8]'
+AllChat: '&8[%color%All&8]'
+TeamChat: '&8[%color%Team&8]'
+DeadChat: '&8[&cDEAD&8]'
+AllChatText: '!'
+ChatEnd: '&e&l>'
+KillXP: 5
+KillBossXP: 20
+commandsToRunAtEndGame:
+ - "anni stop"
+Boss-loot:
+  Item-Nb: 6
+  Item0:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+        OXYGEN: 3
+      display-name: '§bКаска'
+      lore:
+      - '§7'
+      repair-cost: 4
+  Item1:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        OXYGEN: 3
+      display-name: '§bШапка-Ушанка'
+      lore:
+      - '§7'
+      repair-cost: 4
+  Item2:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+      display-name: '§bModnaKasta'
+      lore:
+      - '§7!'
+      repair-cost: 2
+  Item3:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 2
+        PROTECTION_FALL: 4
+      display-name: '§bКеды'
+      lore:
+      - '§7!'
+      repair-cost: 2
+  Item4:
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_INFINITE: 1
+      display-name: '§7Арбалет'
+      lore:
+      - '§7!'
+      repair-cost: 4
+  Item5:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 3
+      display-name: '§7Меч Джедая'
+      lore:
+      - '§7!'
+      repair-cost: 2
+  Item6:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+      display-name: '§bБронижилет'
+      lore:
+      - '§7!'
+      repair-cost: 2
